@@ -1,57 +1,45 @@
-script.js
+Accessing Object Methods
 
-const Url =
+<!DOCTYPE html>
 
-"https://jsonplaceholder.typicode.com/users"; tab += '<tr>
+<html>
 
-async function getapi(url) {
+<body>
 
-const response = await fetch(Url);
+<h2>JavaScript Objects</h2>
 
-var data = await response.json();
+<p>An object method is a function definition, stored as a property value.</p>
 
-console.log(data);
+<p id="demo"></p>
 
-show(data);
+<script>
 
-}
+// Create an object:
 
-</tr>';
+const person =
 
-}
+firstName: "ANKIT",
 
-1個
+lastName: "VERMA",
 
-hanics of wong with one of the Top Corporates
+id: 9363,
 
-function show(data) {
+fullName: function() {
 
-let tab = '<tr>
+return this.firstName + " " + this.lastName;
 
-<th class="text-
+// Display data from the object:
 
-center">ld</th>
+document.getElementById("demo").inner
 
-<th class="text-
+HTML = person fullName();
 
-center">Name</th>
+</script>
 
-center">Email</th> <th class="text-
+</body>
 
-</tr>';
+</html>
 
-for (let r of data) {
+<-->
 
-<td>${r.id}</td>
-
-<td>${r.name}</td>
-
-<td>${r.email}</td>
-
-2
-
-document.getElementById("employees").inner HTML = tab;
-
-}
-
-getapi (Url);
+https://www.w3schools.com/js/exercise_js.asp ?filename=exercise_js_objects1
